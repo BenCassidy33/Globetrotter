@@ -1,0 +1,196 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+
+    font-family: "Roboto";
+    font-weight: 450;
+    background-color: black;
+}
+
+* {
+    color: white;
+}
+
+div {
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8vh;
+
+    /* -webkit-box-shadow: 0px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 10px 5px 0px rgba(0, 0, 0, 0.75); */
+    /* box-shadow: 0px 10px 5px -6px rgba(0,0,0,0.75); */
+    background-color: black;
+    color: white;
+    z-index: 99999;
+    position: relative;
+}
+
+.header>*{
+    display: flex;
+    margin: 0px 15px 0px 15px;
+}
+
+.centerHeader>*{
+    margin: 5px 15px 5px 15px;
+}
+
+
+#imageSlideShow {
+    position: relative;
+    width: 100%; /* Adjust the width of the slideshow */
+    margin: auto;
+    overflow: hidden;
+}
+
+#imgSlideShowImg {
+    display: block;
+    width: 100%;
+    display: block;
+    aspect-ratio: 16/8;
+    object-fit: cover;
+    object-position: center;
+    transition: opacity 0.5 ease-in-out;
+}
+
+.arrows {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 10; /* Make sure arrows are above the image */
+}
+
+.left-arrow {
+    left: 10px; /* Adjust position from the left edge */
+}
+
+.right-arrow {
+    right: 10px; /* Adjust position from the right edge */
+}
+
+.arrows>img {
+    width: 30px; /* Adjust arrow size */
+    height: auto;
+}
+
+.travelInfoButtonRow {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+#verticalVideoContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    margin-top: 25px;
+}
+
+#verticalVideos {
+    align-self: center;
+    height: 80vh;
+    aspect-ratio: 9/16;
+    position: relative;
+}
+
+#verticalVideo {
+    border-radius: 15px;
+}
+
+.videoArrows {
+    position: absolute;
+}
+
+.uparrow {
+    width: 30px;
+    height: 30px;
+    left: 50%;
+}
+
+video {
+    aspect-ratio: 9/16;
+    height: 80vh;
+    height: full;
+    width: full;
+}
+
+.uparrowPos {
+    left: 90%;
+    top: 45%;
+    padding: 5px;
+}
+
+.downarrow {
+    width: 30px;
+    padding: 5px;
+}
+
+.downarrowPos {
+    left: 90%;
+    top: 55%
+}
+
+.downarrowPos {
+    transform: rotate(180deg);
+}
+
+.downarrowButton {
+    border: none;
+    background-color: none;
+}
+
+.arrowButton {
+    border: none;
+    cursor: pointer;
+}
+
+.muteUnmuteButton {
+    width: 30px;
+    border: none;
+}
+
+.muteUnmuteButtonButton {
+    border: none;
+}
+
+.muteUnmuteButtonPos {
+    top: 95%;
+    left: 91.9%;
+    cursor: pointer;
+}
+
+.logoContainer {
+    width: 30px;
+    height: 30px;
+    border-radius: 99999px;
+}
+
+.logo {
+    object-fit: cover;
+    width: 50px;
+    height: 50px;
+    border-radius: 9999px;
+}
+
+a {
+    text-decoration: none;
+}
